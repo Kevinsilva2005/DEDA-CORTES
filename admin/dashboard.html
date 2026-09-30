@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Painel Administrativo | Deda Cortes</title>
+
+    <meta name="description"
+          content="Painel administrativo da Barbearia Deda Cortes.">
+
+    <!-- CSS PRINCIPAL -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CSS ADMINISTRATIVO -->
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+                    PAINEL ADMINISTRATIVO
+====================================================== -->
+
+<main class="dashboard-page">
+
+
+    <!-- ==================================================
+                        CABEÇALHO
+    ================================================== -->
+
+    <header class="dashboard-header">
+
+        <div class="dashboard-logo">
+
+            <a href="../index.html">
+
+                <img src="../ft/fotologo.jpeg"
+                     alt="Logo Deda Cortes">
+
+            </a>
+
+        </div>
+
+
+        <div class="dashboard-titulo">
+
+            <span class="subtitulo">
+                DEDA CORTES
+            </span>
+
+            <h1>
+                Painel administrativo
+            </h1>
+
+        </div>
+
+
+        <button
+            type="button"
+            id="btnSair"
+            class="btn-sair">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Sair
+
+        </button>
+
+    </header>
+
+
+
+    <!-- ==================================================
+                    CONTEÚDO PRINCIPAL
+    ================================================== -->
+
+    <section class="dashboard-conteudo">
+
+
+        <!-- ==================================================
+                        RESUMO
+        ================================================== -->
+
+        <div class="dashboard-resumo">
+
+
+            <div class="card-resumo">
+
+                <div class="card-resumo-icone">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Agendamentos
+                    </span>
+
+                    <strong id="totalAgendamentos">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-resumo">
+
+                <div class="card-resumo-icone">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Hoje
+                    </span>
+
+                    <strong id="agendamentosHoje">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-resumo">
+
+                <div class="card-resumo-icone">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Próximo cliente
+                    </span>
+
+                    <strong id="proximoCliente">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+                    AGENDAMENTOS
+        ================================================== -->
+
+        <div class="dashboard-card">
+
+
+            <div class="dashboard-card-header">
+
+                <div>
+
+                    <span class="subtitulo">
+                        AGENDA
+                    </span>
+
+                    <h2>
+                        Agendamentos
+                    </h2>
+
+                </div>
+
+
+                <div class="filtro-data">
+
+                    <label for="filtroData">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        Data
+
+                    </label>
+
+                    <input
+                        type="date"
+                        id="filtroData">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                        LISTA DE AGENDAMENTOS
+            ================================================== -->
+
+            <div
+                id="listaAgendamentos"
+                class="lista-agendamentos">
+
+                <!--
+
+                    O JavaScript preencherá esta área
+                    com os agendamentos do Firestore.
+
+                -->
+
+                <div class="estado-vazio">
+
+                    <i class="fa-regular fa-calendar-xmark"></i>
+
+                    <h3>
+                        Nenhum agendamento encontrado
+                    </h3>
+
+                    <p>
+                        Os agendamentos aparecerão aqui.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+<!-- ======================================================
+                    JAVASCRIPT
+====================================================== -->
+
+<script type="module"
+        src="../js/dashboard.js"></script>
+    
+
+</body>
+
+</html>

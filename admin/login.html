@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Deda Cortes</title>
+
+    <meta name="description"
+          content="Área administrativa da Barbearia Deda Cortes.">
+
+    <!-- CSS PRINCIPAL -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CSS DO LOGIN -->
+    <link rel="stylesheet" href="../css/admin.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+                        LOGIN
+    ================================================== -->
+
+    <main class="login-page">
+
+
+        <div class="login-container">
+
+
+            <!-- LOGO -->
+
+            <div class="login-logo">
+
+                <a href="../index.html">
+
+                    <img src="../ft/fotologo.jpeg"
+                         alt="Logo Deda Cortes">
+
+                </a>
+
+            </div>
+
+
+            <!-- CABEÇALHO -->
+
+            <div class="login-header">
+
+                <span class="subtitulo">
+                    ÁREA ADMINISTRATIVA
+                </span>
+
+                <h1>
+                    Bem-vindo
+                </h1>
+
+                <p>
+                    Entre para gerenciar os agendamentos.
+                </p>
+
+            </div>
+
+
+            <!-- FORMULÁRIO -->
+
+            <form id="formLogin">
+
+
+                <!-- E-MAIL -->
+
+                <div class="campo-login">
+
+                    <label for="email">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        E-mail
+
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        autocomplete="email"
+                        required>
+
+                </div>
+
+
+                <!-- SENHA -->
+
+                <div class="campo-login">
+
+                    <label for="senha">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        Senha
+
+                    </label>
+
+                    <div class="senha-container">
+
+                        <input
+                            type="password"
+                            id="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required>
+
+                        <button
+                            type="button"
+                            id="mostrarSenha"
+                            aria-label="Mostrar senha">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MENSAGEM DE ERRO -->
+
+                <div
+                    id="mensagemLogin"
+                    class="mensagem-login"
+                    role="alert">
+                </div>
+
+
+                <!-- BOTÃO -->
+
+                <button
+                    type="submit"
+                    class="btn-login"
+                    id="btnLogin">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Entrar
+
+                </button>
+
+
+            </form>
+
+
+            <!-- VOLTAR -->
+
+            <a href="../index.html"
+               class="voltar-site">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Voltar para o site
+
+            </a>
+
+
+        </div>
+
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script type="module"
+            src="../js/admin.js"></script>
+
+</body>
+
+</html>
