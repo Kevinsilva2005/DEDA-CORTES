@@ -1,0 +1,409 @@
+/* ======================================================
+                    LOGIN ADMIN
+                    DEDA CORTES
+====================================================== */
+
+
+/* ======================================================
+                    PÁGINA
+====================================================== */
+
+.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:40px 20px;
+
+    background:#111111;
+
+}
+
+
+/* ======================================================
+                CONTAINER DO LOGIN
+====================================================== */
+
+.login-container{
+
+    width:100%;
+
+    max-width:450px;
+
+    padding:45px 40px;
+
+    background:#181818;
+
+    border:1px solid rgba(212,175,55,.20);
+
+    border-radius:20px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45);
+
+}
+
+
+/* ======================================================
+                        LOGO
+====================================================== */
+
+.login-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:30px;
+
+}
+
+
+.login-logo img{
+
+    width:110px;
+
+    height:110px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+
+
+/* ======================================================
+                    CABEÇALHO
+====================================================== */
+
+.login-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+
+.login-header .subtitulo{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--dourado);
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+}
+
+
+.login-header h1{
+
+    margin-bottom:10px;
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+
+.login-header p{
+
+    color:#aaa;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+
+/* ======================================================
+                    CAMPOS
+====================================================== */
+
+.campo-login{
+
+    margin-bottom:22px;
+
+}
+
+
+.campo-login label{
+
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#ddd;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+
+.campo-login label i{
+
+    margin-right:7px;
+
+    color:var(--dourado);
+
+}
+
+
+.campo-login input{
+
+    width:100%;
+
+    height:52px;
+
+    padding:0 16px;
+
+    border:1px solid #333;
+
+    border-radius:10px;
+
+    outline:none;
+
+    background:#111;
+
+    color:white;
+
+    font-family:inherit;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+
+.campo-login input::placeholder{
+
+    color:#666;
+
+}
+
+
+.campo-login input:focus{
+
+    border-color:var(--dourado);
+
+    box-shadow:
+        0 0 0 3px rgba(212,175,55,.10);
+
+}
+
+
+/* ======================================================
+                CAMPO DE SENHA
+====================================================== */
+
+.senha-container{
+
+    position:relative;
+
+}
+
+
+.senha-container input{
+
+    padding-right:55px;
+
+}
+
+
+.senha-container button{
+
+    position:absolute;
+
+    top:50%;
+
+    right:16px;
+
+    transform:translateY(-50%);
+
+    color:#888;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.senha-container button:hover{
+
+    color:var(--dourado);
+
+}
+
+
+/* ======================================================
+                MENSAGEM DE ERRO
+====================================================== */
+
+.mensagem-login{
+
+    display:none;
+
+    margin-bottom:20px;
+
+    padding:12px 15px;
+
+    border-radius:8px;
+
+    background:rgba(180,40,40,.12);
+
+    border:1px solid rgba(220,70,70,.25);
+
+    color:#ff8585;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+}
+
+
+.mensagem-login.visivel{
+
+    display:block;
+
+}
+
+
+/* ======================================================
+                    BOTÃO LOGIN
+====================================================== */
+
+.btn-login{
+
+    width:100%;
+
+    min-height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    border-radius:10px;
+
+    background:var(--dourado);
+
+    color:#111;
+
+    font-family:inherit;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.btn-login:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(212,175,55,.20);
+
+}
+
+
+.btn-login:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+}
+
+
+/* ======================================================
+                    VOLTAR AO SITE
+====================================================== */
+
+.voltar-site{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:25px;
+
+    color:#999;
+
+    font-size:13px;
+
+    transition:.3s;
+
+}
+
+
+.voltar-site:hover{
+
+    color:var(--dourado);
+
+}
+
+
+/* ======================================================
+                    RESPONSIVIDADE
+====================================================== */
+
+@media(max-width:500px){
+
+    .login-container{
+
+        padding:35px 25px;
+
+    }
+
+
+    .login-header h1{
+
+        font-size:27px;
+
+    }
+
+
+    .login-logo img{
+
+        width:95px;
+
+        height:95px;
+
+    }
+
+}
